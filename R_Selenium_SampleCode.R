@@ -7,6 +7,11 @@ library(dplyr)
 library(tesseract)
 library(tidyverse)
 
+#Install drivers. 
+#selenium()
+#selenium_object = selenium(retcommand = TRUE, check = FALSE)
+#binman::list_versions("chromedriver")
+
 #Input version of chromedriver. 
 remote_driver = rsDriver(browser = "chrome", chromever = "114.0.5735.90", verbose = FALSE, port = free_port())
 remDr <- remote_driver[["client"]]
